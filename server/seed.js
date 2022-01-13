@@ -2,7 +2,7 @@ const db = require('./models');
 const data = require('./flashcardData.json');
 
 // delete 
-db.flashcard.deleteMany({}, (err, result) => {
+db.Flashcard.deleteMany({}, (err, result) => {
     if(err) {
         console.log(err);
         process.exit();
@@ -10,7 +10,7 @@ db.flashcard.deleteMany({}, (err, result) => {
     console.log(result.deletedCount, 'flashcards deleted');
     
     //create
-    db.flashcard.create(data.flashcards, (err, seededFlashcards) => {
+    db.Flashcard.create(data.flashcards, (err, seededFlashcards) => {
         if(err) {
             console.log(err);
             process.exit();
