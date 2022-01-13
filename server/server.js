@@ -3,9 +3,8 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const routes = require('./routes')
-
-const port = process.env.PORT||4000; 
 const app = express();
+const port = process.env.PORT||4000; 
 
 //middleware 
 //- CORS for sharing on the same machine
