@@ -1,0 +1,1 @@
+This is a simple study tool for interview and general computer science questions - built using the MERN stack just for fun. 
