@@ -1,0 +1,12 @@
+{
+    "flashcards": [
+        {
+            "question":"Was this the first flash card that was seeded into the FCDB (flashcard database :P )?",
+            "answer":"Yes, Yes it was other Alex."
+        },
+        {
+            "question":"Do we use trailing commas when writing a json object?",
+            "answer":"No we do not other Alex"
+        }
+    ]
+}
