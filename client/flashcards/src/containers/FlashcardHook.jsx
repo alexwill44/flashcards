@@ -7,7 +7,6 @@ function FlashcardsHook(props) {
         <div className = 'flashcards-container'>
             <h1>Flashcards</h1>
             <button onClick={fetchFlashcards}> Random Flashcard </button>
-
             <Gallery data={flashcards} />
         </div>
     );
