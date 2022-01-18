@@ -1,4 +1,5 @@
-const url = 'http:localhost:4144/api/v1/flashcards';
+import { API_URL } from "../constants";
+const url = API_URL + 'flashcards';
 
 export const all = () => {
     return fetch(url).then(responce => responce.json());

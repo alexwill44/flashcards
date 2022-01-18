@@ -23,5 +23,6 @@ export default function useFlashcards(id) {
             });
         }
     };
+    
     return [ flashcards, fetchFlashcards];
 }

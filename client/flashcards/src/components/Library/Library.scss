@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+.gallery { 
+    width: 98%;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    padding: 20px;
+}
+
+.card_body {
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+    margin: 20vh 20vw 15vh 20vw;
+    background-color:floralwhite;
+    border: 2px solid black;
+    align-self: center;
+
+    h4 {
+        border-bottom:2px solid red;
+        color: black;
+    }
+    p {
+        border-bottom:1px solid blue;
+        color:black;
+    } 
+}
