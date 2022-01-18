@@ -6,7 +6,6 @@ function Gallery(props) {
 
     const randomCard = flashcards => {
         const flashcard = flashcards[Math.floor(Math.random()*flashcards.length)]
-
         return (
         <Card {...flashcard} key={props.question + props.answer} />);
         

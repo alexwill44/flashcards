@@ -12,15 +12,6 @@ app.use(cors());
 //- JSON parsing
 app.use(express.json());
 //-API routes
-/// home
-/* app.use("/api/v1/", (req, res) => {
-    res.json({
-        status: 200, 
-        message: `there's no place like home`,
-        requestedAt: new Date(),
-    });
-}); */
-/// flashcards 
 app.use("/api/v1/flashcards", routes.flashcards);
 
 //listen

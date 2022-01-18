@@ -8,3 +8,13 @@ export const all = () => {
 export const show = id => {
     return fetch(`${url}/${id}`).then(responce => responce.json());
 };
+
+export const create = data => {
+    return fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers:  {
+            "Content-Type": "application/json",
+        },
+    }).then(response => response.json());
+};

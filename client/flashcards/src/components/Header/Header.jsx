@@ -1,9 +1,7 @@
 import './Header.scss';
-import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Header(props) {
-
-    
 
     return (
         <div className = 'header'> 
@@ -11,7 +9,7 @@ function Header(props) {
                 <span> card: ### card ID</span>
             </section>
             <section>
-                <span> + add new flashcard (linkto)</span>
+                <Link to='/create'> + Add flashcard </Link>
                 <span> - delete this flashcard(linkto)</span>
             </section>
         </div>
