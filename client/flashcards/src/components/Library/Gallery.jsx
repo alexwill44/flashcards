@@ -1,11 +1,14 @@
 import './Library.scss';
 import Card from './Card';
+import React from'react';
 
 function Gallery(props) {
 
     const randomCard = flashcards => {
+        const flashcard = flashcards[Math.floor(Math.random()*flashcards.length)]
 
-        return (<Card {...flashcards[Math.floor(Math.random()*flashcards.length)]} key={props.question + props.answer} />);
+        return (
+        <Card {...flashcard} key={props.question + props.answer} />);
         
     };
 
