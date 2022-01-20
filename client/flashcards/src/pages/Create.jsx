@@ -10,7 +10,7 @@ class Create extends Component {
     handleSubmit = event => {
         event.preventDefault();
         FlashcardModel.create(this.state).then(json => {
-            this.props.history.push(`/${json.Flashcard}`);
+            this.props.history.push(`/${json.flashcards._id}`);
         });
     };
 
@@ -28,21 +28,22 @@ class Create extends Component {
                         <p>Question: 
                             <input 
                                 onChange={this.handleInput}
-                                type='text'
+                                type='textarea'
                                 name='question'
                                 placeholder='???'
                             />        
                         </p>
                     </span>
                     <span className ='answer'>
-                    <p>Answer:
-                        <input 
+                    <p> Answer: </p>
+                        <textarea 
                             onChange={this.handleInput}
                             type='text'
+                            rows={5}
+                            columns={20}
                             name='answer'
                             placeholder='********'
                         />
-                    </p>
                     </span> 
                     <input type='submit' value='Add Flashcard'/>
                 </form>  
