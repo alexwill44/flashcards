@@ -1,28 +1,35 @@
 import './Library.scss';
 import React from 'react';
+import { useEffect } from 'react';
 
-const Card = (props) => {
+function Card (props) {
     const [showAnswer, setShowAnswer] = React.useState(false)
-    const onCLick = () => {
+    const showHide = () => {
         if( showAnswer === true ) {
             setShowAnswer(false)
         }
         if( showAnswer === false ) {
             setShowAnswer(true)
         }
-    };
-
+    }; 
+    
+    useEffect(
+        function (nextProps) {
+            if(props != nextProps){
+                setShowAnswer(false);
+            }
+        },[props]
+      );
     return (
         <div className = 'card_body'>
             <span className ='question'>    
                 <p>Question: {props.question}</p>
             </span>
-            <input type='submit' value='Toggle Answer' onClick={onCLick} />
+            <input type='submit' value='Toggle Answer' onClick={showHide} />
             {showAnswer ? <Answer answer={props.answer} /> : null }                
         </div>
     );
 };
-
 const Answer = (props) => {
     return (
         <div className ='answer'>

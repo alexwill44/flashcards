@@ -17,7 +17,6 @@ class Show extends Component {
 
     handleAnswer = () => {
         if( this.state.showAnswer === false ) {
-            console.log("nope");
             this.setState({showAnswer:true});
             }
         if( this.state.showAnswer === true ) {
