@@ -7,6 +7,30 @@
         {
             "question":"Do we use trailing commas when writing a json object?",
             "answer":"No we do not other Alex"
+        },
+        {
+            "question":"How does React work?",
+            "answer":"React creates a virtual DOM. WHen state changes in a component it firstly runs a \"diffing\" algorithm, which identifies what has changed in the virtual DOM. The second step is reconciliation, where it updates the DOM with the results of diff."
+        },
+        {
+            "question":"What is React?",
+            "answer":"React is an open=source Javascript library created by Facebook for building complex, interactive UIs in web and mobile applications. React's core purpose is to build UI components: it is often referred to as just the \"V\" (View) in MVC architecture."
+        },
+        {
+            "question":"MVC architectural pattern",
+            "answer":"Model: Handels data logic, View: displas the information from the model to the user, Controller: It controls the data flow into a model object and updates the view whenever data changes."
+        },
+        {
+            "question":"How would you write an inline style in React?",
+            "answer":"<div style={{ height: 10px }}>"
+        },
+        {
+            "question":"What is JEST?",
+            "answer":"Jest is a JAvaScript unit testing framework made by Facebook based on Jasmine and provides automated mock creation and a jsdom environment. It's often used for testing React components."
+        },
+        {
+            "question": "What is props in React?",
+            "answer": "Props are inputs to a React component. They are single calues or objects containing a set of values that are passed to React components on creation using a naming convention similar to HTML-tag attributes. i.e, They are data padded dopwn from a parent component to a child component \r\n The primary purpose of props in React is to provide following compoent functionality: \r\n\t 1. Pass custom data to your React component. \r\n\t 2. Trigger state changes. \r\n\t 3. Use viia this.props.reactProp inside component's render() method. \r\n\t For example, let us create an element with reactProp property,  \r\n\t <Element reactProp = \"1\" /> \r\n\t The reactProp (or whatever you name it) then becomes a property attached to React's native props object which originally already exists on all components created using React library. \r\n\t props.reactProp;" 
         }
     ]
 }
