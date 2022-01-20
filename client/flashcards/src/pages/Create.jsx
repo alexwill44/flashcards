@@ -26,24 +26,26 @@ class Create extends Component {
                 <form onSubmit={this.handleSubmit}>    
                     <span className ='question'>    
                         <p>Question: 
-                            <input 
+                            <textarea 
                                 onChange={this.handleInput}
-                                type='textarea'
+                                type='text'
+                                rows={1}
+                                columns={100}
                                 name='question'
                                 placeholder='???'
                             />        
                         </p>
                     </span>
                     <span className ='answer'>
-                    <p> Answer: </p>
+                    <p> <label for="answer">   Answer: </label> 
                         <textarea 
                             onChange={this.handleInput}
                             type='text'
-                            rows={5}
-                            columns={20}
+                            rows={1}
+                            columns={100}
                             name='answer'
                             placeholder='********'
-                        />
+                        /></p>
                     </span> 
                     <input type='submit' value='Add Flashcard'/>
                 </form>  
