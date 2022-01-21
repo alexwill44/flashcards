@@ -18,3 +18,4 @@ export const create = data => {
         },
     }).then(response => response.json());
 };
+

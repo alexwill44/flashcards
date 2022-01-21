@@ -20,6 +20,12 @@ class FlashcardModel {
             },
         }).then(res => res.json());
     }
+
+    static delete(id) { 
+        return fetch(`${url}/${id}`, {
+            method:"DELETE",
+        }).then(res => res.json());
+    }
 }
 
 export default FlashcardModel;
