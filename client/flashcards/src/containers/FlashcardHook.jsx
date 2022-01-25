@@ -7,7 +7,7 @@ function FlashcardsHook(props) {
     
     return (
         <div className = 'flashcards-container'>
-            <h1>Flashcards</h1>
+            <h1 className='title'>Flashcards</h1>
             <button className="new_card" onClick={fetchFlashcards}> Random Flashcard </button>
             <Gallery data={flashcards} />
         </div>

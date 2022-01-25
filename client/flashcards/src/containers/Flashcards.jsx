@@ -18,7 +18,6 @@ class Flashcards extends Component {
     render() {
         return (
             <div className='flashcards-container'>
-                <h1>Maybe this worked Behold!</h1>
                 <Gallery data={this.state.flashcards} /> 
             </div>
         );   

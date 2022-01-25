@@ -7,8 +7,30 @@
     
 }
 
+body {
+    background-image: url('../../assets/notebooks.jpg');
+    background-size:cover;
+}
+
+i {
+    margin-top: 2vh;
+    margin-left: 54.5vw;
+    margin-bottom: 4vh;
+    color:pink;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
 .gallery { 
     width: 98%;
+}
+
+.title {
+    color: white;
+    font-weight:bolder;
 }
 
 .card {
@@ -50,16 +72,4 @@
 .back:hover {
     border: 1px solid rgb(93, 238, 93);
     background-color: rgb(93, 238, 93);
-}
-
-i {
-    margin-top: 2vh;
-    margin-left: 54.5vw;
-    margin-bottom: 4vh;
-    color:pink;
-    cursor: pointer;
-}
-
-button {
-    cursor: pointer;
 }
