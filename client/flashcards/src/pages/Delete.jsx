@@ -1,7 +1,8 @@
 import { Component } from 'react'; 
 import FlashcardModel from '../models/flashcard';
+import { Link } from 'react-router-dom'; 
 
-class Show extends Component {
+class Delete extends Component {
     state = {
         flashcard: null, 
         showAnswer: false,
@@ -23,6 +24,10 @@ class Show extends Component {
             this.setState({showAnswer:false});
              }
     };
+
+    handleDelete = () => {
+        FlashcardModel.delete(this.props._id).then(this.props.history.push('/'));
+    };
     
     render() {
         const { flashcard } = this.state;
@@ -39,6 +44,12 @@ class Show extends Component {
             <div className = 'card_body'>
                 {flashcard ? (
                 <>       
+                    
+                    <h4>Would You like to delete this card? 
+                        <button className='remove' onClick={this.handleDelete}> Delete </button>
+                        <button className='back'> <Link to='/'> Back to Random </Link></button>
+                    </h4>
+
                     <span className ='question'>    
                         <p>Question: {flashcard.question}</p> 
                     </span>
@@ -53,4 +64,4 @@ class Show extends Component {
     };
 }
 
-export default Show;
+export default Delete;

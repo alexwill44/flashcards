@@ -1,5 +1,9 @@
 * {
     box-sizing: border-box;
+   a {
+       text-decoration: none;
+       color: black;
+   } 
     
 }
 
@@ -22,6 +26,7 @@
     align-self: center;
 
     h4 {
+        padding-bottom: 3px;
         border-bottom:2px solid red;
         color: black;
     }
@@ -32,9 +37,29 @@
     } 
 }
 
+.remove, .back {
+    background-color: floralwhite;
+    border-radius: 5px;
+    padding: 0 1% 0 1%;
+}
+
+.remove:hover {
+    border: 1px solid red;
+    background-color: red;
+}
+.back:hover {
+    border: 1px solid rgb(93, 238, 93);
+    background-color: rgb(93, 238, 93);
+}
+
 i {
-    padding-top: 2vh;
-    padding-left: 54.5vw;
-    padding-bottom: 4vh;
+    margin-top: 2vh;
+    margin-left: 54.5vw;
+    margin-bottom: 4vh;
     color:pink;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
 }
