@@ -69,8 +69,8 @@ const update = (req, res) => {
 const destroy = (req, res) => {
     db.Flashcard.findByIdAndDelete(req.params.id, (err, deletedFC) => {
         if(err){
-            console.log('Error in flashcard UPDATE:', err); 
-            return res.send("Incomplete flashcard UPDATEcontroller function... how bout dat");
+            console.log('Error in flashcard DESTROY:', err); 
+            return res.send("Incomplete flashcard DESTROYcontroller function... how bout dat");
         }
         res.json({
             status: 200,

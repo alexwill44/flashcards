@@ -26,7 +26,7 @@ class Delete extends Component {
     };
 
     handleDelete = () => {
-        FlashcardModel.delete(this.props._id).then(this.props.history.push('/'));
+        FlashcardModel.delete(this.state.flashcard._id).then(this.props.history.push('/'));
     };
     
     render() {

@@ -10,7 +10,7 @@ function Header(props) {
             </section>
             <section>
                 <Link to='/create'> + Add flashcard </Link>
-                <span> - delete this flashcard(linkto)</span>
+                <span> ! Edit </span>
             </section>
         </div>
     );
