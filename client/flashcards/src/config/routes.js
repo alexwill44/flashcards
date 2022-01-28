@@ -5,6 +5,7 @@ import {
     Library,
     Create,
     Delete,
+    Update,
 } from '../pages';
 
 function Routes(props) {
@@ -13,6 +14,7 @@ function Routes(props) {
             <Route exact path='/' component={Library} />
             <Route exact path='/create' component={Create} />
             <Route path='/:id' component={Delete} />
+            <Route path='/:id/update' component={Update} />
         </Switch>
     );
 }
