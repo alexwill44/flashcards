@@ -13,8 +13,8 @@ function Routes(props) {
         <Switch>
             <Route exact path='/' component={Library} />
             <Route exact path='/create' component={Create} />
-            <Route path='/:id' component={Delete} />
             <Route path='/:id/update' component={Update} />
+            <Route path='/:id' component={Delete} />
         </Switch>
     );
 }

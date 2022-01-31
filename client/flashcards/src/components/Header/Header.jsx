@@ -9,7 +9,8 @@ function Header(props) {
                 <span> card: ### card ID</span>
             </section>
             <section>
-                <Link to='/create'> + Add flashcard </Link>
+                <Link to='/create'> <button className='add'>+ Add flashcard </button></Link>
+                <Link to='/'> <button className='back'>Take me HOME</button> </Link>
                 <span> ! Edit </span>
             </section>
         </div>
