@@ -29,8 +29,11 @@ function Card (props) {
 
     return (
         <div className = 'card_body'>
+            <span className='editButtons'> 
+                <Link to={`/${props._id}/update`}> <i className='fas fa-edit update'></i> </Link> 
 
-            <Link to={`/${props._id}`}> <i className="fas fa-eraser delete"></i> </Link>
+                <Link to={`/${props._id}`}> <i className='fas fa-eraser delete'></i> </Link>
+            </span>  
             
             <span className ='question'>    
                 <p>Question: {props.question}</p>

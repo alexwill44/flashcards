@@ -12,14 +12,6 @@ body {
     background-size:cover;
 }
 
-i {
-    margin-top: 2vh;
-    margin-left: 54.5vw;
-    margin-bottom: 4vh;
-    color:pink;
-    cursor: pointer;
-}
-
 button {
     cursor: pointer;
 }
@@ -72,4 +64,26 @@ button {
 .back:hover {
     border: 1px solid rgb(93, 238, 93);
     background-color: rgb(93, 238, 93);
+}
+
+.editButtons {
+    display:flex;
+    flex-direction: row-reverse;
+    gap: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 4vh;
+} 
+
+.update:hover {
+    border: 1px solid black;
+    color: pink;
+}
+
+.delete {
+    color: pink;
+}
+
+.delete:hover{
+    border: 1px solid pink;
+    color: black;
 }
