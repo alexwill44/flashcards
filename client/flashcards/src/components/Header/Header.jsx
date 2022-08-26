@@ -6,7 +6,7 @@ function Header(props) {
     return (
         <div className = 'header'> 
             <section>
-                <span> card: ### card ID</span>
+                <span> Flashcard V.0.1.0 </span>
             </section>
             <section>
                 <Link to='/create'> <button className='add'>+ Add flashcard </button></Link>
