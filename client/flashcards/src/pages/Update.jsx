@@ -33,7 +33,7 @@ function Update({match: { params }, history }) {
             <input type='submit' value='Update Flashcard' />    
             <span className ='question'>    
                 <p>Question: 
-                    <input 
+                    <textarea 
                         type='text'
                         name='question'
                         value={question}
@@ -43,7 +43,7 @@ function Update({match: { params }, history }) {
             </span>
                 <span className ='answer'>
                     <p>Answer: 
-                        <input 
+                        <textarea 
                             type='text'
                             name='answer'
                             value={answer}
